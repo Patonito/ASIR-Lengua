@@ -9,6 +9,21 @@ that people could write using a text format
 plain easy to read, easy to write and with the possibility of converting your
 valid HTML document.
 
+
+## Basic Syntax
+
+| Element  | Syntaxs |
+| ------------- |:-------------:|
+|  Heading    | #
+| Bold     | **text**     |
+| Italic     | *text*     |
+|Blockcuote| >text |
+|Ordered List  | 1. Text  2. Text|
+| Undered list | - First Text -Second text|
+| Link | [Text] (Text.com) |
+| Image | ![Text] (Imf.png).
+
+
 #### Example:
 ```
 
@@ -38,14 +53,7 @@ valid HTML document.
 file opened with a plain text editor
 
 
-## Tipes
-
-| Element  | Syntaxs |
-| ------------- |:-------------:|
-|  Heading    | #
-| Bold     | **text**     |
-| Italic     | *text*     |
-|Blockcuote| >text |
+## Difference between Markdown and HTML
 
 
 
@@ -56,7 +64,7 @@ file opened with a plain text editor
  
  [Markdown Moodle](https://educacionadistancia.juntadeandalucia.es/centros/cadiz/course/view.php?id=4443)
  
- *Link 2*
+ *Example document*
  
 [Markdown 2](ejmarkdown2.md)
  

@@ -1,0 +1,23 @@
+<vehicles>
+    <vehicle>
+        <brand></brand>
+        <model></model>
+        <year></year>
+        <type></type>
+        <num_wheels></num_wheels>
+    </vehicle>
+    <vehicle>
+        <brand></brand>
+        <model></model>
+        <year></year>
+        <type> </type>
+        <num_wheels> </num_wheels>
+    </vehicle>
+    <vehicle>
+        <brand> </brand>
+        <model> </model>
+        <year> </year>
+        <type> </type>
+        <num_wheels> </num_wheels>
+    </vehicle>
+</vehicles>
