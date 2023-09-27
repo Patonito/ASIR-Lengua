@@ -4,16 +4,31 @@
 
 ![Engelbart|100](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png)
 
+Markdown is a maca language that makes it easy to apply formatting to text employing a series of features of a special format, it was developed by [John Gruber](https://en.wikipedia.org/wiki/John_Gruber)  with the help of [Aaron Swartz](https://es.wikipedia.org/wiki/Aaron_Swartz)  in 2004 in order to
+that people could write using a text format
+plain easy to read, easy to write and with the possibility of converting your
+valid HTML document.
 
-Markdown is an easy-to-use markup *language* that is used with plain text to add
-formatting elements to plain text without the use of a formal text editor or the
-use of **HTML** tags.
-
-### Example:
-```Javascript
-var foo= `bar´;
-if(true) foo = `foo´;
+#### Example:
 ```
+
+```
+
+
+### *Advantages:*
+
+1. It is more difficult to make syntax errors
+2. Writing for the web is faster and more comfortable
+
+### *Disadvantage:*
+
+1. we must memorize the function of the characters and the order they should be in.
+2. It is not as powerful as other languages
+
+
+
+
+
 
 
 ### why use it?
@@ -36,10 +51,12 @@ file opened with a plain text editor
 
 ### More information 
  *Link 1*
+
+
  
  [Markdown Moodle](https://educacionadistancia.juntadeandalucia.es/centros/cadiz/course/view.php?id=4443)
  
  *Link 2*
  
-[Markdown 2]()
+[Markdown 2](ejmarkdown2.md)
  
