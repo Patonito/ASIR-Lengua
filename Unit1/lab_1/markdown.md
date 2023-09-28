@@ -9,6 +9,11 @@ that people could write using a text format
 plain easy to read, easy to write and with the possibility of converting your
 valid HTML document.
 
+#### Example:
+```
+Var foo = `bar´;
+if (true) foo = `foo´
+```
 
 ## Basic Syntax
 
@@ -24,11 +29,6 @@ valid HTML document.
 | Image | ![Text] (Imf.png).
 
 
-#### Example:
-```
-Var foo = `bar´;
-if (true) foo = `foo´
-```
 
 
 ### *Advantages:*
@@ -42,11 +42,6 @@ if (true) foo = `foo´
 2. It is not as powerful as other languages
 
 
-
-
-
-
-
 ### why use it?
 
 * It is compatible with all platforms
@@ -57,16 +52,27 @@ file opened with a plain text editor
 ## Difference between Markdown and HTML
 HTML is a publishing format; Markdown is a writing format. Additionally, Markdown's formatting syntax only targets issues that can be expressed in plain text. For those markups that are not covered by Markdown syntax, simply use the HTML itself.
 
+#### Example:
+```
+       HTML                       Markdown
+<h1> Title </h1>               #Title   
+<img scr="Img.ej"/>            ![Text](Img.ej)
+<p> Hellow world </p>          Hello World
+<ul>                           * Earth
+    <li>Earth</li>             * Terra
+    <li>Terra</li>
+</ul>
+```
 
-[Example of what it would look like in HTML]()
+
+[Example of what it would look like in HTML](markdown3.html)
 
 
 ### More information 
  *Link 1*
 
-
  
- [Markdown Moodle](https://educacionadistancia.juntadeandalucia.es/centros/cadiz/course/view.php?id=4443)
+ [Markdown](https://markdown.es/)
  
  *Example document*
  
