@@ -26,7 +26,8 @@ valid HTML document.
 
 #### Example:
 ```
-
+Var foo = `bar´;
+if (true) foo = `foo´
 ```
 
 
@@ -54,7 +55,10 @@ file opened with a plain text editor
 
 
 ## Difference between Markdown and HTML
+HTML is a publishing format; Markdown is a writing format. Additionally, Markdown's formatting syntax only targets issues that can be expressed in plain text. For those markups that are not covered by Markdown syntax, simply use the HTML itself.
 
+
+[Example of what it would look like in HTML]()
 
 
 ### More information 

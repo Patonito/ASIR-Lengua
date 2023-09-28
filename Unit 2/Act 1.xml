@@ -1,23 +1,22 @@
 <vehicles>
     <vehicle>
-        <brand></brand>
-        <model></model>
-        <year></year>
-        <type></type>
-        <num_wheels></num_wheels>
+        <brand>NISSAN</brand>
+        <model>Qashqai</model>
+        <year>2023</year>
+        <type>All terrain</type>
+        <num_wheels>4</num_wheels>
     </vehicle>
     <vehicle>
-        <brand></brand>
-        <model></model>
-        <year></year>
-        <type> </type>
-        <num_wheels> </num_wheels>
+        <brand>MINI</brand>
+        <model>Contryman One D</model>
+        <year>2016</year>
+        <type>Sports</type>
+        <num_wheels>4</num_wheels>
     </vehicle>
     <vehicle>
-        <brand> </brand>
-        <model> </model>
+        <brand>Tesla</brand>
+        <model>3 Stnadard RWS Plus </model>
         <year> </year>
-        <type> </type>
-        <num_wheels> </num_wheels>
-    </vehicle>
+        <type>2021</type>
+        <num_wheels>4</num_wheels>
 </vehicles>
