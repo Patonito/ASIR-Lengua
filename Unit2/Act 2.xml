@@ -1,19 +1,19 @@
 <NBA> 
-<Team>Golden State warrios </Team>
-<Template> 14 players </Template>
-<As>Stephen Curry </As>
-<Court>Chase Center</Court>
-<coach>Steve Kerr</coach>
+    <Team>Golden State warrios </Team>
+        <Template> 14 players </Template>
+        <As>Stephen Curry </As>
+        <Court>Chase Center</Court>
+        <coach>Steve Kerr</coach>
 
-<Team>The Los Angeles Lakers </Team>
-<Template> 18 players </Template>
-<As>LeBron James</As>
-<Court>Crypto.com Arena</Court>
-<coach>Darvin Ham</coach>
+    <Team>The Los Angeles Lakers </Team>
+        <Template> 18 players </Template>
+        <As>LeBron James</As>
+        <Court>Crypto.com Arena</Court>
+         <coach>Darvin Ham</coach>
 
-<Team>Denver Nuggets </Team>
-<Template>17 players</Template>
-<As>Nikola Jokić</As>
-<Court>Ball Arena</Court>
-<coach>Michael Malone</coach>
+    <Team>Denver Nuggets </Team>
+        <Template>17 players</Template>
+        <As>Nikola Jokić</As>
+        <Court>Ball Arena</Court>
+        <coach>Michael Malone</coach>
 </NBA>

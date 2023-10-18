@@ -56,10 +56,10 @@ HTML is a publishing format; Markdown is a writing format. Additionally, Markdow
 ```
        HTML                       Markdown
 <h1> Title </h1>               #Title   
-<img scr="Img.ej"/>            ![Text](Img.ej)
+<img scr="Img.ej"/>             ![Text](Img.ej)
 <p> Hellow world </p>          Hello World
-<ul>                           * Earth
-    <li>Earth</li>             * Terra
+<ul>                            * Earth
+    <li>Earth</li>              * Terra
     <li>Terra</li>
 </ul>
 ```
