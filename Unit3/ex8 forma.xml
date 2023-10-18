@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE forma_geometrica[
+<!ELEMENT  forma_geometrica ( nombre | caracteristicas | numero_de_los_lados)>
+<!ELEMENT  nombre (#PCDATA)>
+<!ELEMENT  caracteristicas (color, tipo)>
+<!ELEMENT  color (#PCDATA)>
+<!ELEMENT  tipo (#PCDATA)>
+<!ELEMENT  numero_de_lados (#PCDATA)>
+]>
+
+<forma_geometrica>
+    <nombre>rombo</nombre>
+    <caracteristicas>
+        <color>naranja</color>
+        <tipo>plana</tipo>
+    </caracteristicas>
+    <numero_de_lados>4</numero_de_lados>
+</forma_geometrica>
+
+
+<!-- | sig elecciones-->
+<!--SOLUCION
+la def de foma geometrica no puede ser opcional porque aparece en los 3
+la def de fg debe ser una secuencia 
+la def de caracteristicas es necesaria pa def el elemeto caracteristica>
+-->
+
+

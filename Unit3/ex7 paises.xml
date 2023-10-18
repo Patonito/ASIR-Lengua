@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises[
+<!ELEMENT  ropa (paises, ciudad?)*>
+<!ELEMENT  pais (#PCDATA)>
+<!ELEMENT  ciudad (#PCDATA)>
+]>
+
+<paises>
+    <pais>italia</pais>
+    <cuidad>florencia</cuidad>
+    <pais>portugal</pais>
+    <cuidad>lisboa</cuidad>
+    <cuidad>oporto</cuidad>
+    <pais>francia</pais>
+</paises>
+
+<!--? sig que puedo ponerla o no-->
+<!--SOLUCION 
+por la def de cardinalidad, no pueden aprecer dos elementos 
+pueden repetirse pares paises-ciudad y paises, pero no dos ciudades
+-->
