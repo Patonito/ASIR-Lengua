@@ -1,0 +1,28 @@
+<?xml- version="1.0" ecording="UTF-8"?>
+<invoice num="999">
+    <Client num="879">
+        <name>Joe Mcklinne</name>
+        <phone>555 8887 36</phone>
+    </Client>
+    <detailas ref="A101"> 
+        <description>Mother board QDI</description>
+        <quantity>1</quantity>
+        <price>230</price>
+    </detailas>  
+
+ <detailas ref="A105"> 
+        <description>DIMM DDR 512MB</description>
+        <quantity>4</quantity>
+        <price>110</price>
+    </detailas>  
+
+ <detailas ref="A107"> 
+        <description>Disco Duro 800GB</description>
+        <quantity>1</quantity>
+        <price> </price>
+    </detailas>  
+
+
+
+
+</invoice>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mesa [
+<!ELEMENT  mesa ANY>
+<!ELEMENT  material (#PCDATA)>
+<!ELEMENT  color (#PCDATA)>
+]>
+
+<mesa> La mesa de 
+    <material> madera es de color
+        <color>marrón</color>
+    </material>
+</mesa>
+
+
+<!--tanto material como color son pecdata, tonces color iria fuera-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mesa [
+<!ELEMENT  mesa ANY>
+<!ELEMENT  material (#PCDATA)>
+<!ELEMENT  color (#PCDATA)>
+]>
+
+<mesa> La mesa de 
+    <material> madera es de color</material>
+    <color>marrón</color>
+</mesa>
+
+<!--SOLUCION
+any acepta cualquier tipo de cotenido que hay que definir....
+material es tipo PCDATA y por lo tanto no puede contener la etiqueta color....
+se opta por la solucion de sacar color fuera
+-->

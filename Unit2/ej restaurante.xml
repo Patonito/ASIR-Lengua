@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipe>
+
+<recipe dinner="4">
+    <name>Onion soup</name>
+        <ingredients>
+            <ingredient>1kg of onions</ingredient>
+            <ingredient>2L of beef stock</ingredient>
+            <ingredient>100gr butter</ingredient>
+            <ingredient>1 spoon flour</ingredient>
+            <ingredient>100gr grated cheese</ingredient>
+            <ingredient>1kg of onions</ingredient>
+            <ingredient>Toasted bread slices</ingredient>
+            <ingredient>Thyme</ingredient>
+            <ingredient>1 bay leaf</ingredient>
+            <ingredient>Pepper</ingredient>
+        </ingredients>
+        <process>
+            <step number="1">Peel and slice the onions thinly</step>
+            <step  number="2">Sauté them with the butter, salt, and pepper over low 
+            heat until they are translucent without browning</step>
+            <step  number="3">Add the flour while stirring continuously</step>
+            <step  number="4">Transfer it to a pot with the broth, thyme, and bay leaf</step>
+            <step  number="5">Let it simmer over low heat for about 15 minutes</step>
+            <step  number="5">Place the bread slices on top, sprinkle with the cheese, and broil in the oven</step>
+        </process>
+
+</recipe>
+

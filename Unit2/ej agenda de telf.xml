@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <agendasdetelf>
+    <persona > 
+        <nombre>Avaricoque</nombre>
+        <apellidos>fiusa</apellidos>
+        <direccion>calle 7</direccion>
+        1º forma <telefono> 
+                 <casa> </casa>
+                <trabajo> </trabajo>
+                <movil> </movil>
+                </telefono>
+        2º forma
+            <telf tipo="casa"> </telf>
+             <telf tipo="trabajo"> </telf>
+            <telf tipo="movil"> </telf>
+    </persona>
+ </agendasdetelf>
+

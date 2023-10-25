@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ropa[
+<!ELEMENT  ropa (nombre, color*)>
+<!ELEMENT  nombre (#PCDATA)>
+<!ELEMENT  color (#PCDATA)>
+]>
+
+<ropa>
+    <nombre>guante</nombre>
+    <color>rojo</color>
+    <color>blanco</color>
+    <color>verde</color>
+    <color>azul</color>
+</ropa>
+
+<!--* sig que se erepite x numero de veses -->
+<!--SOLUCION
+en la  def del elemento ropa se especifica que d ebe aparecer un name y de 0 a varios colores
+no pueden aparecen 2 etiquetas name-->
