@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares [
+ <!ELEMENT lugares ANY> <!--ANY nunca tiene asterisco ni nada/ EMPTY taen-->
+ <!ELEMENT lugar (#PCDATA)>
+]>
+<lugares>En el <lugar>polo norte</lugar> hace mucho frío. Pero, en el <lugar>desierto del Sahara</lugar> hace
+mucho calor.</lugares>
+
+<!--otra posible solucion es definir como mixed content
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares [
+ <!ELEMENT lugares (#PCDATA | lugar)*>
+ <!ELEMENT lugar (#PCDATA)>
+]>
+-->
