@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT agenda (contact, address, phone_numbers)>
+<!ELEMENT contact (name, surname)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT address (street, number, floor, zip_code, city)>
+
+<agenda>
+    <contact>
+        <name>John</name>
+        <surname>Doe</surname>
+        <address>
+            <street>123 Main Street</street>
+            <number>48</number>
+            <floor>7</floor>
+            <zip_code>10001</zip_code>
+            <city>New York</city>
+        </address>
+        <phone_numbers>
+            <home>555-123-4567</home>
+            <mobile>555-987-6543</mobile>
+            <work>555-789-0123</work>
+        </phone_numbers>
+    </contat>
+</agenda>

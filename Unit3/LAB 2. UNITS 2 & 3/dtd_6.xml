@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE exam SYSTEM "exam.dtd">
+<exam>
+ <general date="10/03/2022" version="1.0">
+    <title>Exam</title>
+    <author>Marcus M.</author>
+    <email>email@email.com</email>
+ </general>
+ <unit number="1">
+    <question id="1">
+            <text>Question 1: What does XML stand for?</text>
+            <answer>Extensible Markup Language</answer>
+    </question>
+    <question id="2">
+        <text>Question 2: What does XML stand for?</text>
+        <answer>Extensible Markup Language</answer>
+    </question>
+ </unit>
+ <unit number="2">
+    <question id="3">
+        <text>Question 3: What does XML stand for?</text>
+        <answer>Extensible Markup Language</answer>
+    </question>
+    <question id="4">
+        <text>Question 4: What does XML stand for?</text>
+        <answer>Extensible Markup Language</answer>
+    </question>
+ </unit>
+</exam>

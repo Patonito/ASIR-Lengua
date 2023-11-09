@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videogames>
+     <videogame id="123">
+        <title>The Legend of Zelda </title>
+        <developer>Nintendo</developer>
+        <release_date>21 Febrero,1986</release_date>
+    </videogame>
+     <videogame id="456">
+        <title>Hello Kitty Online</title>
+        <developer>Typhoon Games</developer>
+        <release_date>1 de Julio,2009</release_date>
+    </videogame>
+     <videogame id="789">
+        <title>GTA San Adreas</title>
+        <developer>Rock Star Game</developer>
+        <release_date>26 de Octubre,2004</release_date>
+</videogames>

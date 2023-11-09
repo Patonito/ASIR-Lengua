@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalog>
+    <item>
+    <name>Hair Dryer</name>
+    <price currency="€">30€</price>
+    <Descripion>small appliance that expels hot or 
+    cold air on damp or wet hair and dries the hair
+    quickly, leaving it beautiful
+    </Descripion>
+    </item>
+     <item>
+    <name>Hair Iron</name>
+    <price currency="€">39€</price>
+    <Descripion>Electrical devices used to straighten, 
+    curl and style hair
+    </Descripion>
+    </item>
+</Catalog>

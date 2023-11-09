@@ -1,0 +1,9 @@
+<!ELEMENT exam(general, unit+)>
+<!ELEMENT general(title, author, email)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT unit (question)+>
+<!ELEMENT question (text, answer)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT answer (#PCDATA)>

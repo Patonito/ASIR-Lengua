@@ -1,0 +1,16 @@
+<Restaurant>
+    <Menu>
+        <dish>Sopa Paraguaya</dish>
+        <price currency="€">15€</price>
+        <Ingredients unit="g">500 grams corn flour</Ingredients>
+        <Ingredients unit="ml">500 ml milk</Ingredients>
+        <Ingredients unit="tea_spoon">1 tablespoon salt</Ingredients>
+        <Categorty>lunch</Categorty>
+        <dish>Brownies</dish>
+        <price currency="€">10€</price>
+        <Ingredients unit="g">200 grams of dark chocolate</Ingredients>
+        <Ingredients unit="g">110 grams of butter</Ingredients>
+        <Ingredients unit="tea_spoon">1 tablespoon vanilla essence</Ingredients>
+        <Categorty>lunch</Categorty>
+    </Menu>
+</Restaurant>

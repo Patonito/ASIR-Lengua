@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE smsDB SYSTEM "smsDB.dtd">
+<smsDB>
+    <sms>
+    <phone>955 55 76 55</phone>
+    <date>1/7/2011</date>
+    <time>23:55</time>
+    <message>Hi, are we meeting at 10:00?</message>
+ </sms>
+    <sms>
+    <phone>745 1536 11</phone>
+    <date>22/9/2011</date>
+    <time>15:05</time>
+    <message>Download Arkanoid from http://download.arcanoid.com/win</message>
+    <spam/>
+ </sms>
+ <sms>
+    <phone>842 35 11 00</phone>
+    <date>10/11/2011</date>
+    <time>09:22</time>
+    <message>Thank you for the information, regards</message>
+    </sms>
+</smsDB>

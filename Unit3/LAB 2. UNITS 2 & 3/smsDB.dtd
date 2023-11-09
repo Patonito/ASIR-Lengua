@@ -1,0 +1,6 @@
+<!ELEMENT smsDB (sms)*>
+<!ELEMENT sms (phone, date, time, message, spam)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT message(#PCDATA)>
+<!ELEMENT spam EMPTY>
