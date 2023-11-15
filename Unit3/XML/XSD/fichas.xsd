@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:scheam>
+    <xs:element name="fichas">   
+        <xs:simpeltype>
+            <xs:restriction base="string">
+            
+            
+            
+            
+            </xs:restriction>    
+        
+        
+        
+        
+        
+        </xs:simpeltype>
+        
+        
+    
+    
+    
+    
+
+
+    </xs:element>
+</xs:scheam>
+
+
+
+
+
