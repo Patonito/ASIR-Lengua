@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="fichas4.xsd">
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<xsi:noNamespaceSchemaLocation="fichas5.xsd">
     <ficha numero="1">
         <nombre>Ana Sanz Tin</nombre>
         <edad>22</edad>
@@ -9,4 +9,3 @@ xsi:noNamespaceSchemaLocation="fichas4.xsd">
         <nombre>Iker Rubio Mol</nombre>
         <edad>23</edad>
     </ficha>
-</fichas>

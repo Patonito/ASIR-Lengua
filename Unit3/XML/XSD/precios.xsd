@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:scheam xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:element name="precios">
+        <xs:cpmplextype>
+            <xs:sequence>
+                <xs:element name="precio" maxOccurs="unbunded">
+                    <xs:simpletype>
+                        <xs:retriction base="xs:decimal"/>
+                            <xs:totaldigits value="3"/>
+                            <xs:fractiondigit value="2"/>
+                    </xs:simpletype>
+                </xs:element>
+            </xs:sequence>
+        </xs:cpmplextype>
+    </xs:element>
+</xs:scheam>
