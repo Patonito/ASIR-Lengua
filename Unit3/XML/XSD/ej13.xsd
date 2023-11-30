@@ -1,0 +1,12 @@
+<xs:element name="letras">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z][a-z])*"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<!--    
+Ampliacion: Patorn que admitmtiese palabras imapares 
+    <xs:pattern value="([A-Z][a-z])+[A-Z]?"/>
+/>-->

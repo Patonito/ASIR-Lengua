@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="exerA.xml">
+<xs:elemet name="registro">
+     <xs:complexttype>
+        <xs:sequence>
+            <xs:element name="nick">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattren value="[a-zA-Z0-9_]{1,15}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="password">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattren value="[A-Za-z][a-zA-Z0-9_%#@]{6,13}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            <xs:element>
+            <xs:element name="name" type="namesurname"/>
+            <xs:element name="surname" type="namesurname"/>  
+            <xs:element name="phone"/>
+                <xs:simpleType> 
+                    <xs:restriction base="xs:string">
+                        <xs:pattren value="[A-Za-zñÑáéíóúÁÉÍÓÚ ]{2,50}"/> 
+                        <xs:pattren value="[6-9]([0-9]\s*){8}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element> 
+        <xs:element name="email">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattren value="[a-z][a-z0-9.-_]{1,48}@[a-z][a-z_\.]{1,18}[a-z]\.[a-z]{2,4}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            <xs:element>  
+        </xs:sequence>
+    </xs:complexttype>
+</xs:elemet>
+</xs:schema>
+    

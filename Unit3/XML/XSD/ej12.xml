@@ -1,0 +1,24 @@
+<!--- 
+1) "Capítulo 0", "Capítulo 1", "Capítulo 2"... "Capítulo 9". (Solo se permite un dígito).
+2) "Capítulo 0", "Capítulo 1", "Capítulo 2"... "Capítulo 99". (Uno o dos dígitos).
+3) "Capítulo 1", "Capítulo 2", "Capítulo 3"... "Capítulo 99". (No se permite "Capítulo
+0").
+4) "Capítulo 0", "Capítulo 1", "Capítulo 2"... "Capítulo 99"... "Capítulo 100"... (Uno o
+más dígitos).
+5) Cualquier valor de dos caracteres, cuyo primer carácter sea distinto de un dígito (0-9) y cuyo segundo carácter
+sea "Z": "aZ"... "zZ", "AZ"... "ZZ", "?Z", "=Z", "*Z"...
+6) "ABBC", "ABBBC", "ABBBBC", "ABBBBBC".
+7) El primer carácter debe ser "R". A continuación, deben aparecer obligatoriamente dos ó más "S".
+Finalmente, puede aparecer o no, un dígito del 3 al 8: "RSS", "RSSS"... "RSS3"... "RSS8", "RSSS3"...
+"RSSS8"... "RSSSSSSSSSSS7"...
+8) Cualquier valor que contenga en primer lugar "COD", después tres dígitos (0-9) y, finalmente, uno o más
+caracteres cualesquiera: "COD645pera", "COD646manzana"...
+/>-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ej12 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej12.xsd">
+    <xs:element name="ej12">
+    
+    </xs:element>
+</expresiones-regulares>

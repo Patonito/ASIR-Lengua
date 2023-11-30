@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="store.xsd">
+    <store id="a1" opening="2022-01-10" data_registration="2022-01-12">
+        <name_t>Sport Bike</name_t>
+        <owner>
+            <name_o>Helena Piñero</name_o>
+            <dni>44434343J</dni>
+            <contact>
+                <phone>555432865</phone>
+                <phone>555494382</phone>
+                <phone>555674312</phone>
+            </contact>
+            <address>Av Andalucía 3 Huelva</address>
+        </owner>
+        <warehouse>
+            <stock code="b1" type="bicycle">
+                <quantity>10</quantity>
+                <price>200</price>
+                <unit>Euros</unit>
+            </stock>
+            <stock code="b2" type="wheel">
+                <quantity>30</quantity>
+                <price>25</price>
+                <unit>Euros</unit>
+            </stock>
+            <stock code="b3" type="brakes">
+                <quantity>5</quantity>
+                <price>30</price>
+                <unit>Euros</unit>
+            </stock>
+        </warehouse>
+        <partners>
+            <partner number="001s-ZFM-2022" registration="2022-02-03">
+                <name_p>June Molina</name_p>
+                <bookings>
+                    <booking code_b="001r" reference="b1"/>
+                    <booking code_b="002r" reference="b2"/>
+                </bookings>
+            </partner>
+            <partner number="002s-AJD-2022" registration="2022-02-03">
+                <name_p>Joaquim Castellanos</name_p>
+                <phone>555438189</phone>
+            </partner>
+        </partners>
+    </store>
+    <store id="a2">
+        <name_t>Bicycles Huelva</name_t>
+        <owner>
+            <name_o>Sagrario Carrión</name_o>
+            <dni>12341238X</dni>
+            <office>Av Andalucía 3 Huelva</office>
+        </owner>
+        <warehouse>
+            <stock code="b4" type="saddle">
+                <quantity>99</quantity>
+                <price>30</price>
+                <unit>Euros</unit>
+            </stock>
+            <stock code="b5" type="helmet">
+                <quantity>55</quantity>
+                <price>55</price>
+                <unit>Euros</unit>
+            </stock>
+        </warehouse>
+        <partners>
+            <partner number="003s-QWE-2022" registration="2022-01-02">
+                <name_p>June Molina</name_p>
+            </partner>
+            <partner number="004s-IOJ-2022" registration="2022-03-03">
+                <name_p>Joaquim Castellanos</name_p>
+                <phone>555438189</phone>
+                <bookings>
+                    <booking code_b="003r" reference="b5"/>
+                    <booking code_b="004r" reference="b5"/>
+                </bookings>
+            </partner>
+        </partners>
+    </store>
+</stores>

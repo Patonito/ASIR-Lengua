@@ -1,0 +1,14 @@
+Solucion 2
+<xs:element name="ej13">
+    <xs:complextype>
+        <xs:secuence></xs:secuence>
+            <xs:element name="clave">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[\da-zA-Z]{10}"/> [0-9a-zA-Z]*
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:secuence>
+    </xs:complextype>
+</xs:element>

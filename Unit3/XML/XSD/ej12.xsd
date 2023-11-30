@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ej12">
+       <xs:complexttype>
+            <xs:sequence>
+                <xs:element name="text1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattren value="(capitulo )[\d]"/> 
+                        </xs:restriction>
+                    </xs:simpleType> 
+                </xs:element>
+                <xs:element name="text2">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattren value="(capitulo )([0-9]|[1-9][0-9])"/> 
+                        </xs:restriction>
+                    </xs:simpleType> 
+                </xs:element>
+               <xs:element name="text3">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattren value="(capitulo )([1-9]|[1-9][0-9])"/> 
+                <xs:element name="text4">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattren value="(capitulo )([0-9]|[1-9][0-9]+)"/> 
+                        </xs:restriction>
+                    </xs:simpleType> 
+                </xs:element>
+                <xs:element name="text5">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattren value="/DZ"/> 
+                        </xs:restriction>
+                    </xs:simpleType> 
+                </xs:element>
+                <xs:element name="text6">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattren value="AB{2,}C"/> 
+                        </xs:restriction>
+                    </xs:simpleType> 
+                </xs:element>
+                <xs:element name="text6">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattren value="RS{2,}[3-8]?"/> 
+                        </xs:restriction>
+                    </xs:simpleType> 
+                </xs:element>
+                <xs:element name="text7">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattren value="COD[0-9]{3}.+"/> 
+                        </xs:restriction>
+                    </xs:simpleType> 
+                </xs:element>
+                        </xs:restriction>
+                    </xs:simpleType> 
+                </xs:element> 
+            </xs:sequence>
+        </xs:complexttype>
+    </xs:element>
+</xs:schema>
+</xs:schema>
