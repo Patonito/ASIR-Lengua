@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF8">
+<vehicles>
+    <vehicle>
+        <brand> </brand>
+        <model> </model>
+        <production_date day=" " mounth=" " year=" "> </production_date>
+        <production_place country="JP"> </production_place>
+        <units> </units>
+    </vehicle>
+</vehicles>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="facturas">
+        <xs.complextype>
+            <xs:sequence>
+                <xs:element name="facturas" minOccurs="0" maxOccurs="unbonded">
+                    <xs:complextype>
+                        <xs:sequence>
+                            <xs:element name="recibo">
+                                <xs:complextype>
+                                    <xs:sequence>
+                                        <xs:element name="producto" maxOccurs="unbonded"/>
+                                            <xs:complextype>
+                                                <xs:sequence>
+                                                    <xs:element name="nombre" type="xs:string"/>
+                                                    <xs:element name="fragil" minOccurs="0"/>
+                                                      <xs:element name="cantidad"/>
+                                                        <xs:complextype>
+                                                            <xs:sequence>
+                                                                <xs:element name="total" type="xs:float"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="unidad">
+                                                                <xs:simpletype>
+                                                                    <xs:restriction base="xs:string">
+                                                                        <xs:enumeration value="kg"/>
+                                                                        <xs:enumeration value="unidad"/>
+                                                                    </xs:restriction>
+                                                                </xs:simpletype>
+                                                            </xs:attribute>
+                                                        </xs:complextype>
+                                                </xs:sequence>
+                                            </xs:complextype>
+                                    </xs:sequence>
+                                </xs:complextype>
+                            </xs:element>
+                            <xs:element name="entrega" maxOccurs="unbonded">
+                                <xs:complextype>
+                                    <xs:sequence>
+                                        <xs:element name="distancia"/>
+                                            <xs:simpletype>
+                                                <xs:restriction base="xs:positiveInteger">
+                                                    <xs:maxOccurs value="999"/>
+                                                </xs:restriction>
+                                            </xs:simpletype>
+                                        <xs:element name="coste"/>
+                                          <xs:simpletype>
+                                            <xs:restriction base="xs:decimal">
+                                            <xs:fractiondigits value="2"/>
+                                            </xs:restriction>
+                                        </xs:simpletype>
+                                    </xs:sequence>
+                                </xs:complextype>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:positiveInteger"/>
+                    </xs:complextype>
+                </xs:element>
+            </xs:sequence>
+        </xs:complextype>
+    </xs:element>
+</xs:schema>

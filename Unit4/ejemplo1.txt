@@ -1,0 +1,2 @@
+Obtener todos los párrafos de los capítulos
+/libro/capitulo/parrafo

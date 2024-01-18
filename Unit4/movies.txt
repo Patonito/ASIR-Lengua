@@ -1,0 +1,29 @@
+1.	titulos de Películas con review="5"
+/movies/movie[@review='5']/title
+//movie[@review='5']/title
+2. Ritulos y años de peliculas con review=5 y anteriores a 199
+//movie[@review='5' and @year<'1995']/title | //movie[@review='5' and @year<'1995']/@year
+3. Películas cuyo año sea par
+//movie[@year mod 2=0] /title
+4. Actores de la segunda pelicula de la lista
+//movie[2]/actor
+/movies/movie[position= 2]/actor
+5. Títulos de las películas en las que ha actuado Nicolas Cage
+//movies[actor= 'Nicolas Cage']/title
+6. Actores que han trabajado con el el actor Nicolas Cage en alguna película, excluyendo al propio Nicolas Cage
+//movie[actor='Nicolas Cage']/actor[text() != 'Nicolas Cage']
+7. Productores que han producido películas en las que ha actuado Nicolas Cage
+//movie[actor='Nicolas Cage']/Producer
+//movie[actor='Nicolas Cage']/producer/name
+8. Actores que hacen cine cómico (comedy)
+//movie[@type= 'comedy']/actor
+9. Películas en las que actúan más de 3 Actores
+//movie[count(actor)>3]/title
+10. Título de las películas donde participe algún miembro de la familia Coen
+//movie[contains(.,'Coen')]/title
+11. Valor medio de review de las películas en las que ha actuado Nicolas Cage
+//movie[actor='Nicolas Cage']/@review
+count(//movie[actor='Nicolas Cage']/@review)
+sum(//movie[actor='Nicolas Cage']/@review)
+div(//movie[actor='Nicolas Cage']/@review)
+sum(//movie[actor='Nicolas Cage']/@review) div count(//movie[actor='Nicolas Cage']/@review)

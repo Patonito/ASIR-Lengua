@@ -1,0 +1,54 @@
+1.  Nombre de la Universidad
+Universidad/nombre
+2.  Pais de la Universidad
+/Universidad/Pais
+3.  Nombres de las Carreras
+Universidad/carreras/carrera/nombre
+//carrera/nombre
+//carreras//nombre 
+4.  Años de plan de estudio de las carreras
+//carreras//plan
+//carreras//plan/../nombre | //carreras//plan
+5a.  Nombres de todos los alumnos
+/Universidad/alumnos/alumno/nombre
+//alumnos/alumno/nombre
+5b.  Nombre y Apellidos de todos los alumnos
+//alumnos/alumno/nombre | //alumnos/alumno/apellido1 | //alumnos/alumno/apellido2
+6.  Identificadores de todas las carreras
+//carreras/carrera/@id
+//carreras/carrera/nombre | /carreras/carrera/@id
+7.  Datos de la carrera cuyo id es c01
+//carreras/carrera[@id="c01"] 
+8.  Centro en que se estudia de la carrera cuyo id es c02
+//carreras/carrera[@id="c02"]/Centro
+9.  Nombre de las carreras que tengan subdirector
+//carreras/carrera/subdirector/
+10. Nombre de los alumnos que estén haciendo proyecto
+//alumno/estudios/proyecto/../../nombre
+11. Códigos de las carreras en las que hay algún alumno matriculado
+//carreras/carrera/@id/ 
+//alumno/estudios/carrera/@codigo
+//carreras/carrera[@id=//alumnos/alumno/estudios/carrera/@codigo]/@id
+//alumnos/alumno/estudios/carrera/@codigo
+12. Apellidos y Nombre de los alumnos con beca
+//alumnos/alumno[@beca="si"]/apellido1 | //alumnos/alumno[@beca="si"]/apellido2 | //alumnos/alumno[@beca="si"]/apellido1 | //alumnos/alumno[@beca="si"]/nombre
+13. Nombre de las asignaturas de la titulación c04
+//asignaturas/asignatura[@titulación="c04"]/nombre
+14. Nombre de las asignaturas de segundo trimestre
+//asignaturas/asignatura[trimestre="2"]/nombre
+//asignaturas/asignatura[trimestre=2]/nombre
+15. Nombre de las asignaturas que no tienen 4 créditos teóricos
+//asignaturas/asignatura[creditos_teoricos!=4]/nombre
+16. Código de la carrera que estudia el último alumno
+//alumnos/alumno[last()]//carera/@codigo
+//alumnos/alumno[last()]/estudios/carera/@codigo
+17. Código de las asignaturas que estudian mujeres
+//alumnos/alumno[sexo=Mujer]/estudios/asignatura/@codigo
+18. Nombre de los alumnos que matriculados en la asignatura a02
+//alumnos/alumno/estudios/asignaturas/asignatura[@codigo="a02"]/../../nombre
+//alumnos/alumno[./estudios/asignaturas/asignatura/@codigo="a02"]/nombre
+19. Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura
+//alumnos/alumno//asignatura/../../carera/@codigo
+//alumnos/alumno/estudios[.//asignatura]/carera/@codigo
+20. Apellidos de todos los hombres
+//alumnos/alumno[sexo="Hombre"]/apellido1 | //alumnos/alumno[sexo="Hombre"]/apellido2
