@@ -83,12 +83,31 @@ Universidad/carreras/carrera/nombre
 ***************************************************************************************************************************************************************************************************************
 25. Nombre de los alumnos matriculados en carreras que no tienen subdirector
 -Consulta parcial
-//careras/carera[not(subdirector)]/@id
+//carreras/carrera[not(subdirector)]/@id
 //alumnos/alumno/estudio/carrera/@codigo
 -Consulta final
-//alumnos/alumno/estudios/carrera[@codigo=//careras/carera[not(subdirector)]/@id]/../../nombre
+//alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[not(subdirector)]/@id]/../../nombre
 26. Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática
+-Consulta parcial
+//asignaturas/asignatura[creditos_practicos=0]/@id 
+//asignaturas/asignatura[creditos_practicos=0]/@titulacion
+//carreras/carrera[nombre="I.T. Informática"]/@id
+
+//alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../../nombre 
+//alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../asignaturas/asignatura/@codigo
+
+-Consulta final
+//alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../../nombre | //alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../asignaturas/asignatura[@codigo=//asignatura[creditos_practicos= 0]/@id]
+ver. dif pero intuitiva he'i 
+//alumno[.//carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]][.//asignatura[@codigo=//asignaturas/asignatura[creditos_practicos=0]/@id]]/nombre
 
 27. Nombre de los alumnos ques estudian carreras cuyos planes son anteriores a 2002
+-Consulta parcial
+//carreras/carrera[plan<2002]/@id
+-Consulta final
+ver. dif
+//alumno[.//carrera[@codigo=//carreras/carrera[plan<2002]/@id]]/nombre
+ver. anterior
+//alumno/estudio/carrera[@codigo=//carreras/carrera[plan<2002]/@id]/../nombre
+[]--> condicion: mba'e heise pea que si dice "si bla,bla,bla.."
 
-[]--> condicion: mba'e heise pea que si dice "si bla..."
