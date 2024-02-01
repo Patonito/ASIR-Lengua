@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+}
+
+li:hover {
+    background-color: orange;
+    font-size: 5em;
+    border: 20px blue dotted;
+}
+a {
+    color:cadetblue
+}
+a:visited {
+    color:brown;
+}
