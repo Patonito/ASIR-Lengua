@@ -1,15 +1,15 @@
 Nombre del propietario de la agenda.
-/agenda/propietario/identificadores/nombre
+        /agenda/propietario/identificadores/nombre
 Teléfono de casa del propietario.
-/agenda/propietario/telefonos/casa
+        /agenda/propietario/telefonos/casa
 Nombres y apellidos de los contactos de la agenda.
-//contactos/persona/identificadores/nombre | //contactos/persona/identificadores/apellidos
+        //contactos/persona/identificadores/nombre | //contactos/persona/identificadores/apellidos
 Nombre e identificador de cada contacto.
-//contactos/persona/identificadores/nombre | //contactos/persona/@id
+        //contactos/persona/identificadores/nombre | //contactos/persona/@id
 Datos del contacto con identificador "p02".
-//contactos/persona[@id="p02"]/*/*
+        //contactos/persona[@id="p02"]/*/*
 Identificadores de los contactos que tienen teléfono en casa.
-//contactos/persona/telefonos/casa/../../@id
+        //contactos/persona/telefonos/casa/../../@id
 Identificadores de los contactos que viven en Santander
 //contactos/persona/direccion[localidad='Santander']/../@id
 Nombre y apellidos de los contactos que viven en Santander

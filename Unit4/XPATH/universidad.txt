@@ -1,35 +1,35 @@
 1.  Nombre de la Universidad
-Universidad/nombre
+/universidad/nombre
 2.  Pais de la Universidad
-/Universidad/Pais
+/universidad/pais
 3.  Nombres de las Carreras
-Universidad/carreras/carrera/nombre
-//carrera/nombre
-//carreras//nombre 
-4.  Años de plan de estudio de las carreras
-//carreras//plan
+//carreras//nombre
+//carreras/carrera/nombre
+4a.  Años de plan de estudio de las carreras junto a su nombre
+//plan
+4b.  Años de plan de estudio de las carreras junto a su nombre
 //carreras//plan/../nombre | //carreras//plan
 5a.  Nombres de todos los alumnos
-/Universidad/alumnos/alumno/nombre
-//alumnos/alumno/nombre
-5b.  Nombre y Apellidos de todos los alumnos
-//alumnos/alumno/nombre | //alumnos/alumno/apellido1 | //alumnos/alumno/apellido2
+//alumnos//nombre
+5b.  Nombres y apellidos de todos los alumnos
+//alumnos//nombre | //alumnos//apellido1 | //alumnos//apellido2
 6.  Identificadores de todas las carreras
 //carreras/carrera/@id
-//carreras/carrera/nombre | /carreras/carrera/@id
+//carreras/carrera/nombre | //carreras/carrera/@id
 7.  Datos de la carrera cuyo id es c01
-//carreras/carrera[@id="c01"] 
+//carreras/carrera[@id="c01"]
 8.  Centro en que se estudia de la carrera cuyo id es c02
-//carreras/carrera[@id="c02"]/Centro
+//carreras/carrera[@id="c02"]/centro
 9.  Nombre de las carreras que tengan subdirector
-//carreras/carrera/subdirector/
+//carreras/carrera/subdirector/../nombre
 10. Nombre de los alumnos que estén haciendo proyecto
-//alumno/estudios/proyecto/../../nombre
+//alumnos/estudios/proyecto/../../nombre
 11. Códigos de las carreras en las que hay algún alumno matriculado
-//carreras/carrera/@id/ 
-//alumno/estudios/carrera/@codigo
-//carreras/carrera[@id=//alumnos/alumno/estudios/carrera/@codigo]/@id
+Consultas parciales
+//carreras/carrera/@id
 //alumnos/alumno/estudios/carrera/@codigo
+Consulta final
+//carreras/carrera[@id=//alumnos/alumno/estudios/carrera/@codigo]/@id
 12. Apellidos y Nombre de los alumnos con beca
 //alumnos/alumno[@beca="si"]/apellido1 | //alumnos/alumno[@beca="si"]/apellido2 | //alumnos/alumno[@beca="si"]/nombre
 13. Nombre de las asignaturas de la titulación c04
@@ -53,61 +53,53 @@ Universidad/carreras/carrera/nombre
 20. Apellidos de todos los hombres
 //alumnos/alumno[sexo="Hombre"]/apellido1 | //alumnos/alumno[sexo="Hombre"]/apellido2
 21. Nombre de la carrera que estudia Víctor Manuel
--Consulta parcial
-//alumnos/alumno[nombre="Victor Manuel"]/estudios/carrera/@codigo
--Consulta final
-//Carreras/carrera[@id=//alumnos/alumno[nombre="Victor Manuel"]/estudios/carrera/@codigo"]/nombre
+Consultas parciales
+//alumnos/alumno[nombre="Víctor Manuel"]/estudios/carrera/@codigo
+//carreras/carrera/@id
+Consulta final
+//carreras/carrera[@id=//alumnos/alumno[nombre="Víctor Manuel"]/estudios/carrera/@codigo]/nombre
 22. Nombre de las asignaturas que estudia Luisa
--Consulta parcial
+Consultas parciales
 //asignaturas/asignatura/@id
 //alumnos/alumno[nombre="Luisa"]/estudios/asignaturas/asignatura/@codigo
--consulta final
+Consulta final
 //asignaturas/asignatura[@id=//alumnos/alumno[nombre="Luisa"]/estudios/asignaturas/asignatura/@codigo]/nombre
 23. Primer apellido de los alumnos matriculados en Ingeniería del Software
--Consulta parcial
+Consultas parciales
 //alumnos/alumno/estudios//asignatura/@codigo
 //alumnos/alumno[./estudios//asignatura/@codigo]/apellido1
 //asignaturas/asignatura[nombre="Ingeniería del Software"]/@id
--Consulta final
+Consulta final
 //alumnos/alumno[./estudios//asignatura[@codigo=//asignaturas/asignatura[nombre="Ingeniería del Software"]/@id]]/apellido1
-**************************************************************************************************************************************************************************************************************
 24. Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología de los Alimentos
--Consulta parcial
+Consultas parciales
 //asignaturas/asignatura[nombre="Tecnología de los Alimentos"]/@id
 //asignaturas/asignatura[nombre="Tecnología de los Alimentos"]/@titulacion
-//alumnos/alumno/estudio/asignatura[@codigo=//asignaturas/asignatura[nombre="Tecnología de los Alimentos"]/@id]
-//asignaturas/asignatura[@id=//alumnos/alumno/estudio/asignatura[@codigo=//asignaturas/asignatura[nombre="Tecnología de los Alimentos"]/titulacion] ?????????????????
 //carreras/carrera[@id=]/nombre
--Consulta final
-//carreras/carrera[@id=]/nombre=//asignaturas/asignatura[@id=//alumno/estudio/asignaturas/asignatura[@codigo=//asignaturas//asignatura[nombre="Tecnología de los Alimentos"]@id]/@codigo]/@titulacion]/nombre
-***************************************************************************************************************************************************************************************************************
+//alumnos/alumno/estudios/asignaturas/asignatura[@codigo=//asignaturas/asignatura[nombre="Tecnología de los Alimentos"]/@id]/@codigo
+//asignaturas/asignatura[@id=//alumnos/alumno/estudios/asignaturas/asignatura[@codigo=//asignaturas/asignatura[nombre="Tecnología de los Alimentos"]/@id]/@codigo]/@titulacion
+Consultas finales
+//carreras/carrera[@id=//asignaturas/asignatura[@id=//alumnos/alumno/estudios/asignaturas/asignatura[@codigo=//asignaturas/asignatura[nombre="Tecnología de los Alimentos"]/@id]/@codigo]/@titulacion]/nombre
+//carrera[@id=//alumno[.//asignatura[@codigo=//asignatura[nombre='Tecnología de los Alimentos']/@id]]//carrera/@codigo]/nombre
 25. Nombre de los alumnos matriculados en carreras que no tienen subdirector
--Consulta parcial
+Consultas parciales
 //carreras/carrera[not(subdirector)]/@id
-//alumnos/alumno/estudio/carrera/@codigo
--Consulta final
+//alumnos/alumno/estudios/carrera/@codigo
+Consulta final
 //alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[not(subdirector)]/@id]/../../nombre
-26. Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática
--Consulta parcial
-//asignaturas/asignatura[creditos_practicos=0]/@id 
-//asignaturas/asignatura[creditos_practicos=0]/@titulacion
+26. Nombre de los alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática
+Consultas parciales
+//asignaturas/asignatura[creditos_practicos = 0]/@id
+//asignaturas/asignatura[creditos_practicos = 0]/@titulacion
 //carreras/carrera[nombre="I.T. Informática"]/@id
-
-//alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../../nombre 
+//alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../../nombre
 //alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../asignaturas/asignatura/@codigo
-
--Consulta final
-//alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../../nombre | //alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../asignaturas/asignatura[@codigo=//asignatura[creditos_practicos= 0]/@id]
-ver. dif pero intuitiva he'i 
-//alumno[.//carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]][.//asignatura[@codigo=//asignaturas/asignatura[creditos_practicos=0]/@id]]/nombre
-
-27. Nombre de los alumnos ques estudian carreras cuyos planes son anteriores a 2002
--Consulta parcial
+Consulta final
+//alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../../nombre | //alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../asignaturas/asignatura[@codigo=//asignaturas/asignatura[creditos_practicos = 0]/@id]
+//alumno[.//carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]][.//asignatura[@codigo=//asignaturas/asignatura[creditos_practicos = 0]/@id]]/nombre
+27. Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002
+Consultas parciales
 //carreras/carrera[plan<2002]/@id
--Consulta final
-ver. dif
+Consulta final
 //alumno[.//carrera[@codigo=//carreras/carrera[plan<2002]/@id]]/nombre
-ver. anterior
-//alumno/estudio/carrera[@codigo=//carreras/carrera[plan<2002]/@id]/../nombre
-[]--> condicion: mba'e heise pea que si dice "si bla,bla,bla.."
-
+//alumno/estudios/carrera[@codigo=//carreras/carrera[plan<2002]/@id]/../../nombre

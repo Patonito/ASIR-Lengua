@@ -1,0 +1,27 @@
+body {
+    font-size: 10px;
+    text-align: center;
+}
+p {
+    color: blue;
+    font-size: 12px;
+    text-align: left;
+}
+p#estilo1 {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+p.clase1 {
+    color: black;
+    font-style: italic;
+    font-size: 18px;
+    border-bottom: 2px black dotted;
+}
+h4 {
+    text-align: left;
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

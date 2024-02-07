@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recursos para listas</title>
+    <style type="text/css">
+        body {
+            background-color: azure;
+        }
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        span {
+            font-weight: bolder;
+            color: darkblue;
+        }
+
+        a {
+            color: green;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            border: 2px solid greenyellow;
+            border-radius: 20px;
+        }
+        h3 {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: yellowgreen;
+        }
+
+        a:hover {
+            background-color: brown;
+        }
+
+        ul li {
+            list-style: square;
+        }
+
+        ul li ul li {
+            list-style: circle;
+        }
+
+        .ol_prime li {
+            list-style: decimal;
+        }
+
+        .ol_second li {
+            list-style:
+                lower-alpha;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Recursos para crear listas</h1>
+    <p>En esta página vamos a probar distintos elementos <span>HTML</span> para la creación de <span>listas</span>.</p>
+    <p>Este es otro párrafo para enlazar mi página a la <a target="_blank"
+            href="https://educacionadistancia.juntadeandalucia.es/centros/cadiz/">moodle</a>.</p>
+    <h3>Lista no ordenada &lt;ul&gt;</h3>
+    <ul>
+        <li>Elem 1</li>
+        <li>Elem 2</li>
+        <li>Elem 3. Tiene sublista
+            <ul>
+                <li>Subelem 1</li>
+                <li>Subelem 2</li>
+            </ul>
+        </li>
+        <li>Elem 4</li>
+    </ul>
+    <h3>Lista ordenada &lt;ul&gt;</h3>
+    <ol class="ol_prime">
+        <li>Elem 1</li>
+        <li>Elem 2</li>
+        <li>Elem 3. Tiene sublista
+            <ol class="ol_second">
+                <li>Subelem 1</li>
+                <li>Subelem 2</li>
+            </ol>
+        </li>
+        <li>Elem 4</li>
+    </ol>
+    <h3>Listas de definición &lt;dl&gt;</h3>
+    <dl class="dl_prime">
+        <dt>Termino 1</dt>
+        <dd>Definición del término 1</dd>
+        <dt>Termino 2</dt>
+        <dd>Definición del término 2</dd>
+        <dt>Termino 3</dt>
+        <dd>Definición del término 3</dd>
+    </dl>
+</body>
+
+</html>

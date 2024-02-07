@@ -1,0 +1,33 @@
+.red_column {
+    background-color: red;
+}
+.green_column {
+    background-color: green;
+}
+.blue_column {
+    background-color: blue;
+}
+#row1 {
+    color: teal;
+}
+#row2 {
+    color: red;
+}
+#row3 {
+    color: blue;
+}
+#row4 {
+    color: orange;
+}
+#row5 {
+    color: purple;
+}
+#row6 {
+    color: olive;
+}
+#row7 {
+    color: fuchsia;
+}
+#row8 {
+    color: green;
+}

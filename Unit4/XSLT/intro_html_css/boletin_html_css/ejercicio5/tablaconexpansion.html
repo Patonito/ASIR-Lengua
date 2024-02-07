@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas con extensión de celdas</title>
+    <style type="text/css">
+       table, th, td {
+        border: solid black 3px;
+        border-collapse: collapse;
+       }
+       td.centrar {
+        text-align: center;
+       }
+       .centrar_vert {
+        /* Por defecto ya se alinea al centro verticalmente*/
+        vertical-align: middle;
+       }
+       caption {
+        caption-side: bottom;
+       }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Título de la tabla</caption>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td class="centrar_vert" rowspan="2">Este texto está alineado al centro verticalmente y a la izquierda horizontalmente</td>
+            <td class="centrar">Celda 1</td>
+            <td class="centrar">Celda 2</td>
+        </tr>
+        <tr>
+            <td  class="centrar" colspan="2">Celda 3</td>
+        </tr>
+    </table>
+</body>
+
+</html>

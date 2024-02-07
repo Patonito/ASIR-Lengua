@@ -57,7 +57,7 @@
         <asignatura id="a02" titulacion="c01">
             <nombre>Ingeniería del Software</nombre>
             <creditos_teoricos>6</creditos_teoricos>
-            <creditos_practicos>1.5</creditos_practicos>
+            <creditos_practicos>0</creditos_practicos>
             <trimestre>2</trimestre>
         </asignatura>
         <asignatura id="a03" titulacion="c02">
@@ -116,7 +116,6 @@
                     <asignatura codigo="a01"/>
                     <asignatura codigo="a03"/>
                     <asignatura codigo="a05"/>
-                    <asignatura codigo="a09"/>
                 </asignaturas>
             </estudios>
         </alumno>
