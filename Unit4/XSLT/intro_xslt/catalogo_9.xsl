@@ -25,8 +25,20 @@
                         <tr>
                             <td><xsl:value-of select="title"/></td>
                             <td><xsl:value-of select="artist"/></td>
-                            <td><xsl:value-of select="country"/></td>
-                            <td><xsl:value-of select="year"/> </td>  
+                            <td><xsl:value-of select="artist/@country"/></td>
+                            <td>
+                                <xsl:choose>
+                                    <xsl:when test="year &gt;'1959' and year &lt;'1970'">
+                                        60's
+                                    </xsl:when>
+                                    <xsl:when test="year &gt;'1969' and year &lt;'1980'">
+                                        70's
+                                    </xsl:when>
+                                       <xsl:when test="year &gt;'1979' and year &lt;'1990'">
+                                        80's
+                                    </xsl:when>
+                                </xsl:choose>
+                            </td>
                         </tr>
                     </xsl:for-each>
                 </table>
@@ -34,7 +46,3 @@
         </html>
     </xsl:template>
 </xsl:stylesheet>
-<!-- Obtenemos una tabla con los datos titulo, artista, pais y año-->
-<!-- ulilizamos la etiqueta xsl:sort para ordenar los elementos de la tabla-->
-
-
