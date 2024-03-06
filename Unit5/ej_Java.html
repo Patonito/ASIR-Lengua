@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .rojo {
+        color: red;
+    }
+</style>
+<body>
+    <h1>JavaScript can Change HTML</h1>
+    <p class="negro" id="p1">Buenas Mundo</p>
+    <p>Este program cambia el script.</p>
+    <button value="ejecuta js" id="boton" onclick="cambiatexto()"> ejecutar</boton>
+        <script>
+            function cambiatexto() {
+                if(document.getElementByID("p1")[0].innerHTML = "holap")
+                    { document.getElementByID("p1")[0].innerHTML = "adio";}
+
+                else{document.getElementByID("p1")[0].innerHTML = "holap"}
+
+                document.getElementByTagName("p")[0].classlist.add("rojo");
+                document.getElementByTagName("p")[1].classlist.add("rojo");
+            }
+        </script>
+</body>
+</html>
+<!-- ULEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE *llora epicamente-->

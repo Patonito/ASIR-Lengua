@@ -4,3 +4,4 @@ HTMl:
        tr:fila \td:columna
 	tr \ td
 
+-Saber montar plantilla con y sin foreach
