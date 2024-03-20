@@ -1,0 +1,31 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: o;
+}
+h1{
+    /*display: inline;*/
+    height: 100px;
+    margin: 15px 10px 5px 30px; /*en direc de las agujas del reloj*/
+    padding: 10px;
+    border: 2px black solid ;
+}
+div div{
+    height: 100px;
+    text-align: center;
+    border: 2px black solid ;
+    background-color: rgb(225, 255, 255);
+    width: 20%;
+    
+}
+.flex-container{
+    display: flex;
+    flex-direction: row; /*la disposicionde las cajas*/
+    width: 100%;
+    justify-content:flex-start;
+    align-items:center;
+    align-content:center;
+    flex-wrap: wrap;
+    background-color: rgb(30, 210, 54);
+    height: 300px;
+}
