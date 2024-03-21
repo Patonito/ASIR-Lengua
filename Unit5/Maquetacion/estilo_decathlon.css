@@ -32,10 +32,22 @@ div div{
 .grid-container{
     display: grid;
     grid-template: 
-    "cabecera cabecera" 150px
-    "menu menu" 50px
-    "principal secundaria" 600px
-    "pie pie" 100px;
+    "cabecera cabecera cabecera cabecera" 150px
+    "menu menu menu secundaria" 50px
+    "principal principal principal secundaria" 600px
+    "pie pie pie pie" 100px;
+
+    @media(min-width: 800px) {
+        grid-template:
+            "cabecera" 100px
+            "menu" 50px
+            "principal" 400px
+            "secundaria" 400px
+            "pie" 75px;
+    }
+}
+imd.cabezera{
+    width: max-content;
 }
 header{
     grid-area: cabecera;
