@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body *{
+    border: 1px solid black;
+}
+#container{
+    display: flex ;
+    flex-direction: column;
+}
+header{
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    height: 80px ;
+}
+header h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:  3em; /*sig multiplicar la letra M(que es la mas grande del abecedario) por x numero*/
+}
+nav{
+    grid-area: bread-crumbs;
+    height: 25px;
+}
+main{
+    grid-area: principal;
+    display: flex;
+    flex-grow: 1;
+}
+#enlaces-lateral{
+    width: 25%;
+    grid-area: enlaces-lateral;
+}
+#main-section{
+    width: 75%;
+    grid-area: main-section;
+    display: flex;
+}
+#main-section section{
+    width: 80%;
+    grid-area: noticias;
+}
+#main-section aside {
+    width: 20%;
+    grid-area: noticias-lateral ;
+}
+footer{
+    grid-area: pie;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+main{
+    grid-area: principal;
+    height: 100%;
+    grid-template:
+    "cabezera" 50px
+    "bread-crumbs" 50px
+    "principal" auto
+    "pie" 30px;
+    min-height: 100vh;
+}
+*/
