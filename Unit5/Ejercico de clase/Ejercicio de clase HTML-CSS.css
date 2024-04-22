@@ -6,41 +6,45 @@
 /*body *{}*/
 #container{
     display: flex ;
-    flex-direction: column;
+    flex-direction: column;  
+    height: 100vh;
 }
+
 header{
     grid-area: cabecera;
     display: flex;
     justify-content: space-between;
     height: 80px ;
     border: 1px solid black;
-    background-color: rgb(253, 255, 108);
 }
+
 header h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:  3em; /*sig multiplicar la letra M(que es la mas grande del abecedario) 
-                    por x numero*/
+    height: 80px;
+   /*font-size:  3em; sig multiplicar la letra M(que es la mas grande del abecedario) por x numero*/
 }
+
 nav{
     grid-area: bread-crumbs;
-    height: 25px;
+    height: 40px;
     border: 1px solid black;
     margin-bottom: 5px;
 }
 main{
     grid-area: principal;
     display: flex;
-    flex-grow: 1;
+    
+    flex-shrink: 1;
     border: 1px solid black;
 }
+
 #noticias_lateral{
-    margin-right: 50px; 
+    margin-right: 20px; 
 }
 #enlaces-lateral{
     width: 25%;
     grid-area: enlaces-lateral;
     border: 1px solid black;
-    background-color: rgb(207, 255, 159);
     margin-right: 10px;
     border: 1px solid black;
 }
@@ -48,9 +52,9 @@ main{
     width: 75%;
     grid-area: main-section;
     display: flex;
-    border: 1px solid black;
-    
+    border: 1px solid black;  
 }
+
 #main-section section{
     width: 80%;
     grid-area: noticias;
@@ -60,21 +64,22 @@ main{
     width: 20%;
     grid-area: noticias-lateral ;
     border: 1px solid black;
-    background-color: rgb(131, 250, 250);
     margin-left: 10px;
 }
+
 footer{
     grid-area: pie;
     height: 50px;
     border: 1px solid black;
-    background-color: rgb(255, 179, 92);
     margin-top: 5px;
+    background-color: aquamarine;
 }
+
 img.icono {
     float: left;
     justify-content: left;
     align-items: left ;
-    margin: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px; /*direc agujas del reloj*/
     height: 150px;
 }
 p {
@@ -82,6 +87,5 @@ p {
     font-size: 1,5 em;
 }
 .clear{
-    clear: both; /*se pone cunado hy un float*/
+    clear: both; /*se pone cunado hay un float*/
 }
-
