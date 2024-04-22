@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid1</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            border: 2px solid black;
+        }
+        .grid_container {
+            display: grid;
+            height: 100vh;
+            grid-template:
+            "g1 g2 g3"
+            "g4 g5 g6"
+            "g4 g7 g8"
+            "g4 g9 g6"
+            "g4 g10 g8"            
+            ;
+            grid-template-columns: 1fr 2fr 3fr;
+            grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+            
+        }
+        #g1 {
+           grid-area: g1; 
+        }
+        #g2 {
+           grid-area: g2; 
+        }
+        #g3 {
+           grid-area: g3; 
+        }
+        #g4 {
+           grid-area: g4; 
+        }
+        #g5 {
+           grid-area: g5; 
+        }
+        #g6 {
+           grid-area: g6; 
+        }
+        #g7 {
+           grid-area: g7; 
+        }
+        #g8 {
+           grid-area: g8; 
+        }
+        #g9 {
+           grid-area: g9; 
+        }
+        #g10 {
+           grid-area: g10; 
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div id="g1">g1</div>
+        <div id="g2">g2</div>
+        <div id="g3">g3</div>
+        <div id="g4">g4</div>
+        <div id="g5">g5</div>
+        <div id="g6">g6</div>
+        <div id="g7">g7</div>
+        <div id="g8">g8</div>
+        <div id="g9">g9</div>
+        <div id="g10">g10</div>
+    </div>
+</body>
+</html>
