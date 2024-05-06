@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+header,main,footer,aside,img {
+    border: 2px solid black;
+}
+.grid-container {
+    display: grid;
+    grid-template:
+    "cab cab"
+    "menu princ"
+    "pie pie";
+    grid-template-columns: 
+    125PX auto ;
+    grid-template-rows: 
+    100px auto 50px;
+    height: 100vh;
+}
+header{ 
+    grid-area: cab;
+    display: flex;
+    background-image: url(../resources/fondos/fondo1.jpg)
+}
+header #titulos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+aside img:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+    /*flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 120px ;
+    object-fit: contain;*/
+}
+.activo{
+    background-color: antiquewhite;
+}
+main {
+    grid-area: princ;
+    overflow: scroll;
+    position: relative;
+}
+main div{
+    position: relative; /*BUSCAR COMO FUNCA*/
+}
+main ul{
+    display: flex;
+    justify-content: center;
+    gap:5px
+}
+main ul li{
+    list-style: none;   
+}
+main ul li:hover{
+    background-color: aquamarine;
+}
+p::first-letter{ /*tipo periodico*/
+    font-size: 2em;
+    color: brown;
+    background-color: burlywood;
+}
+footer {
+    grid-area: pie;
+}
