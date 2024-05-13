@@ -3,9 +3,29 @@
     margin: 0;
     padding: 0; 
 }
-/*header,main,footer,aside,img {
-    border: 2px solid black;
-}*/
+.grid_container {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    "cab cab cab"
+    "princ menu menu"
+    "g2 g2 g4"
+    "g5 g7 g7"
+    "g6 g7 g7"
+    ;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.clear{
+    clear: both;
+}
+
+
+
+
+
+
+/*
 .grid-container {
     display: grid;
     grid-template:
@@ -18,6 +38,16 @@
     100px auto 50px;
     height: 100vh;
 }
+.grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+  }
+*/
+  /*________________________________________________________________________________*/
+  /*
 header{ 
     grid-area: cab;
     display: flex;
@@ -42,11 +72,6 @@ aside {
     align-items: center;
     gap: 20px;
     background-image: url(../resources/fondos/fondo1.jpg);
-/*
-    padding-top: 20px;
-    margin-top: 3px;
-    margin-bottom: 3px
-*/
 }
 aside img {
     flex-grow: 0;
@@ -94,7 +119,7 @@ main ul{
     padding-bottom: 5px;
     background-color: burlywood;
     position: sticky;
-    top: 0px; /*<--import*/ 
+    top: 0px; /*<--import 
     gap:5px;
 }
 main ul li{
@@ -103,7 +128,7 @@ main ul li{
 main ul li:hover {
     background-color: rgb(174, 174, 255);
   }
-p::first-letter{ /*tipo periodico*/
+p::first-letter{ /*tipo periodico
     font-size: 2em;
     color: brown;
     background-color: burlywood;
@@ -115,7 +140,7 @@ h1,h2,h3,p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 img.no-activo {
-    background-color: rgb(219, 205, 184); /*fiesta y gastronomia*/
+    background-color: rgb(219, 205, 184); /*fiesta y gastronomia
     cursor: pointer;
 }
 
@@ -123,8 +148,8 @@ footer {
     grid-area: pie;
     background-image: url(../resources//fondos/fondo3.jpg);
 }
-
-@media (max-width: 750px){ /*Es la forma en la que se vera la web en los difs dispositivos*/
+/*
+@media (max-width: 750px){ /*Es la forma en la que se vera la web en los difs dispositivos
     header img{
         height: 100px;
         padding: 5px;
@@ -162,3 +187,4 @@ footer {
         max-width: 30px;
     }
 }
+*/
