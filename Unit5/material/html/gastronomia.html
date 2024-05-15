@@ -26,40 +26,78 @@
             </a>
             <img class="activo" alt="gastronomia barbate" src="../resources/iconos/gastronomia.png">
         </aside>
-        <main>
-            <ul>
-                <li><a href=""> </a></li>
+        <main id="gastro">
+            <ul id="indice">
+                <li><a href="#AE">Atun Encebollado</a></li>
+                <li><a href="#mojama">Mojama</a></li>
+                <li><a href="#FC">Fideos con caballas</a></li>
+                <li><a href="#RMT">Recortes</a></li>
+                <li><a href="#MF">Morena frita</a></li>
             </ul>
-            <div class="grid">
-                <h2>Gastronomia</h2>
-                <p>La gastronomía de Barbate se enmarca dentro de la gastronomía de la provincia de Cádiz, centrada 
-                en los productos del mar, en especial el atún de almadraba. Entre los diferentes platos que ofrece 
-                pueden destacarse los siguientes:
-                <p>- Atún encebollado: Se realiza con la parte del atún conocida como "mormo". Es el plato más destacado de la zona.</p>
-                    <div class="clear"></div>
-                    <img class="img" alt="atun_encebollado" src="../resources/imagenes/atun_enceb.jpg"> 
-                <p>- Mojama: Producto obtenido a partir del lomo del atún, que es sometido a un proceso 
-                    de curado mediante sazonado y secado al aire. Barbate, junto a Isla Cristina (Huelva), 
-                    concentra la mayor parte de la producción andaluza de mojama, y desde el año 2015 cuenta 
-                    con Indicación Geográfica Protegida (IGP). </p>
-                <div class="clear"></div>
-                <img class="img" alt="mojama" src="../resources/imagenes/mojama.jpg"> 
-                <p>- Fideos con caballas: Pescado azul que pertenece a la familia de los escómbridos, abunda 
-                    en el Mediterráneo y en el océano Atlántico, y tiene una carne blanca deliciosa que se 
-                    presta a distintas preparaciones ya sea guisada, con cebolla, en escabeche o al horno 
-                    (y también es muy común encontrarla en conserva).</p>
-                    <div class="clear"></div>
-                    <img class="img" alt="Fideos_cebolla" src="../resources/imagenes/fideo en cebolla.jpg"> 
-                <p>- Recortes de mojama en tomate: </p>
-                <div class="clear"></div>
-                <img class="img" alt="rmt" src="../resources/imagenes/rdmt.jpg"> 
-                <p>- Morena frita:Pescado magro de carne blanca, algo gelatinosa y de sabor peculiar.</p>  
-                <div class="clear"></div>
-                <img  alt="rmt" src="../resources/imagenes/Morena frita.jpg"> 
+            <div id="gastronomia">
+                <div class="d1">
+                    <h2>Gastronomia</h2>
+                        <p>La gastronomía de Barbate se enmarca dentro de la gastronomía de la provincia de Cádiz, centrada 
+                        en los productos del mar, en especial el atún de almadraba. Entre los diferentes platos que ofrece 
+                        pueden destacarse los siguientes:
+                </div>
+
+                <div class="d2">
+                    <h2 id="AE">Atún encebollado</h2>
+                        <p>Se realiza con la parte del atún conocida como "mormo". Es el plato más destacado de la zona.</p>
+                        <img class="img" width="190" alt="atun_encebollado" src="../resources/imagenes/atun_enceb.jpg"> 
+                </div>
+
+                <div class="d3">
+                    <h2 id="mojama">Mojama</h2>
+                        <p>Producto obtenido a partir del lomo del atún, que es sometido a un proceso 
+                        de curado mediante sazonado y secado al aire. Barbate, junto a Isla Cristina (Huelva), 
+                        concentra la mayor parte de la producción andaluza de mojama, y desde el año 2015 cuenta 
+                        con Indicación Geográfica Protegida (IGP).</p>
+                    <img class="img" alt="mojama" src="../resources/imagenes/mojama.jpg"> 
+                </div>
+
+                <div class="d4">
+                    <h2 id="FC">Fideos</h2>
+                        <p>Pescado azul que pertenece a la familia de los escómbridos, abunda 
+                            en el Mediterráneo y en el océano Atlántico, y tiene una carne blanca deliciosa que se 
+                            presta a distintas preparaciones ya sea guisada, con cebolla, en escabeche o al horno 
+                            (y también es muy común encontrarla en conserva).</p>
+                            <img class="img" alt="Fideos_cebolla" src="../resources/imagenes/fideo en cebolla.jpg">
+                </div> 
+
+                <div class="d5">
+                    <h2 id="RMT">Recortes de mojama en tomate</h2>
+                        <p>Qwertyuiopasdfghjklñzxcvbnm</p>
+                        <img class="img" alt="rmt" src="../resources/imagenes/rdmt.jpg"> 
+                </div>
+
+                <div class="d6">
+                    <h2 id="MF">Morena frita</h2>    
+                        <p> Pescado magro de carne blanca, algo gelatinosa y de sabor peculiar.</p>  
+                        <img  alt="rmt" src="../resources/imagenes/Morena frita.jpg"> 
+                </div>
+                <div class="d7">
+                    <h2>Atun</h2>
+                        <p>tuntun</p>
+                </div>
             </div>
-        </main>
+        </main> 
+        <soy gay></soy>
         <footer>pie</footer>
     </div>
+    <script>
+        document.getElementById("moj").onclick = alertaMOj;
+        function alertaMOj() {
+            document.getElementById("d2").classList.add("borde_azul");
+            document.getElementById("d3").classList.remove("borde_azul");
+        }
+        document.getElementById("FID").onclick = alertaFID;
+        function alertaFID() {
+            document.getElementById("d3").classList.add("borde_azul");
+            document.getElementById("d2").classList.remove("borde_azul");
+        }
+    </script>
 </body>
 </html>
 
