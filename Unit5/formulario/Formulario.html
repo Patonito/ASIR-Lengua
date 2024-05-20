@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="./frormulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Registro</h1>
+        <fieldset>Formulario </fieldset>
+        <fieldset>Datos Personales: </fieldset>
+        <form actuion="#" method="post">
+            <fieldset id="datos_perosnales"> 
+                <!--NAME-->
+                <label for="pnombre">Nombre: <br>
+                    <input type="text" id="pnombre" name="nombre" placeholder="Escribe tu nombre..."> <br>
+                </label>
+                <!--APEP-->
+                <label for="papellido">Apellido: <br>
+                    <input type="text" id="papellido" name="apellido" placeholder="Escribe tu apellido..."> <br>
+                </label>
+                <!--DNI-->
+                <label for="dni">DNI: <br>
+                    <input type="text" id="dni" name="dni" placeholder="Escribe tu dni..."><br>
+                </label>
+                <!--terf-->
+                <label from="telf">Telefono: <br>
+                    <input type="tel" id="telf" name="telfono" placeholder="Escribe tu telfono..." size="12"> <br>
+                </label>
+                <!--mail-->
+                <label for="email">Correo Electronico: <br>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu correo..." size="25"> <br>
+                </label>
+                <!--Direc-->
+                <label for="direc">Direccion: <br>
+                    <input type="text" id="direc" name="direccion" placeholder="Escrube tu direccion..." size="30"> <br>
+                </label>
+                <!--fecha nacim-->
+                <label for="fn">Fecha de Nacimiento: <br>
+                    <input type="date" id="fn" name="fechanacim"> <br>
+                </label>       
+                 <!--paises-->   
+                <div>
+                    <label for="paiscampo">Pais:</label> <br>
+                    <select id="paiscampo" name="pais" required>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="España">España</option>
+                        <option value="China">China</option>
+                    </select>
+                </div>
+                <!--sexo-->
+                <div>
+                    Sexo:<br>
+                        <input type="radio" id="sx1" name="sexo"> 
+                        <label for="sexo">Femenino</label> <br>
+                        <input type="radio" id="sx2" name="sexo"> 
+                        <label for="sexo">Masculino</label> <br>
+                        <input type="radio" id="sx3" name="sexo"> 
+                        <label for="sexo">No contestar</label>
+                </div>
+            </fieldset>
+            <fieldset>Detalles de Peticion: </fieldset>
+            <fieldset>
+                     <!--SMS-->
+                <label for="sms">Mensaje:</label>
+                <textarea name="comentario"></textarea> <br>
+                <!--enviar--> 
+                <input type="submit" value="Seleccionar archivo">
+                <label  for="enviar">Ningun archivo seleccionado</label>
+                    <!--hobbies-->
+                <div>
+                    Hobbies:<br>
+                        <input type="checkbox" id="ex" name="existir">
+                        <label for="ex">Existir</label>   <br>
+                        <input type="checkbox" id="com" name="comer">
+                        <label for="comer">Comer</label>  <br>
+                        <input type="checkbox" id="dormir" name="eke">  
+                        <label for="dormit">Dormir</label> <br>
+                        <input type="checkbox" id="vj" name="Video_juego"> 
+                        <label for="vj">Video juegos </label> <br>
+                </div>
+                <!--horario preferido-->
+                    <div>
+                        <label for="hp">Horario preferido:</label> <br>
+                        <select id="hp" name="hp" required>
+                            <option value="12">12:00</option>
+                            <option value="4">16:00</option>
+                            <option value="5">18:00</option>
+                            <option value="8">20:00</option>
+                        </select>
+                    </div>  
+            </fieldset>
+        </form>
+    </diV>
+</body>
+</html>

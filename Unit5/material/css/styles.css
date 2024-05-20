@@ -55,6 +55,7 @@ aside img {
     max-width: 120px;
     max-height: 120px;
 }
+
 aside a{
     flex-grow: 0;
     flex-shrink: 1;
@@ -62,10 +63,12 @@ aside a{
     width: 100%;
     max-width: 120px;
 }
+
 aside img,aside a img{
     width: 120px;
     max-width: 100%;
 }
+/*
 aside img.no-activo:hover {
     background-color: lightgreen;
     cursor: pointer;
@@ -77,6 +80,7 @@ aside a:active img.no-activo {
     background-color: rgb(204, 50, 158);
     cursor: pointer;
 }
+
 main {
     grid-area: princ;
     overflow: scroll;
@@ -94,7 +98,7 @@ main ul{
     padding-bottom: 5px;
     background-color: burlywood;
     position: sticky;
-    top: 0px; /*<--import*/ 
+    top: 0px; /*<--import
     gap:5px;
 }
 main ul li{
@@ -103,22 +107,26 @@ main ul li{
 main ul li:hover {
     background-color: rgb(174, 174, 255);
   }
+*/
 p::first-letter{ /*tipo periodico*/
     font-size: 2em;
     color: brown;
     background-color: burlywood;
 }
+/*
 p::first-line {
     background-color:   rgb(226, 206, 179);
 }
+*/
 h1,h2,h3,p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*
 img.no-activo {
-    background-color: rgb(219, 205, 184); /*fiesta y gastronomia*/
+    background-color: rgb(219, 205, 184); /*fiesta y gastronomia
     cursor: pointer;
 }
-
+*/
 footer {
     grid-area: pie;
     background-image: url(../resources//fondos/fondo3.jpg);
@@ -161,4 +169,49 @@ footer {
         width: 100px;
         max-width: 30px;
     }
+}
+
+/*_______________________________________________________________________________________________*/
+
+
+main {
+    grid-area: princ;
+    overflow: scroll;
+    position: relative;
+    background-image: url(../resources/fondos/fondo3.jpg);
+    margin-left: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+main ul{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content:center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: burlywood;
+    position: sticky;
+    top: 0px; /*<--import*/
+    gap:5px;
+}
+main ul li{
+    list-style: none;  
+}
+main ul li:hover {
+    background-color: rgb(174, 174, 255);
+  }
+aside .activo{
+    background-color: rgb(172, 231, 241);
+}
+aside img.no-activo:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+img.no-activo {
+    background-color: rgb(219, 205, 184); 
+    cursor: pointer;
+}
+aside a:active img.no-activo {
+    background-color: rgb(204, 50, 158);
+    cursor: pointer;
 }

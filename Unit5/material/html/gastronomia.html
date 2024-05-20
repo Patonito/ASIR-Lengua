@@ -80,6 +80,7 @@
                 <div class="d7">
                     <h2>Atun</h2>
                         <p>tuntun</p>
+                        <img  alt="rmt" src="../resources/imagenes/atun.jpg"> 
                 </div>
             </div>
         </main> 
@@ -87,16 +88,51 @@
         <footer>pie</footer>
     </div>
     <script>
-        document.getElementById("moj").onclick = alertaMOj;
-        function alertaMOj() {
-            document.getElementById("d2").classList.add("borde_azul");
-            document.getElementById("d3").classList.remove("borde_azul");
+        document.getElementById("moj").onclick = alerta1;
+        function alerta1(){
+            document.getElementById("mojama").classList.add("borde_rojo")
+            document.getElementById("fideos").classList.remove("borde_rojo")
+            document.getElementById("encebollao").classList.remove("borde_rojo")
+            document.getElementById("morena").classList.remove("borde_rojo")
+            document.getElementById("recortes").classList.remove("borde_rojo")
         }
-        document.getElementById("FID").onclick = alertaFID;
-        function alertaFID() {
-            document.getElementById("d3").classList.add("borde_azul");
-            document.getElementById("d2").classList.remove("borde_azul");
+
+        document.getElementById("fid").onclick = alerta2;
+        function alerta2(){
+            document.getElementById("mojama").classList.remove("borde_rojo")
+            document.getElementById("fideos").classList.add("borde_rojo")
+            document.getElementById("encebollao").classList.remove("borde_rojo")
+            document.getElementById("morena").classList.remove("borde_rojo")
+            document.getElementById("recortes").classList.remove("borde_rojo")
         }
+        
+        document.getElementById("enc").onclick = alerta3;
+        function alerta3(){
+            document.getElementById("mojama").classList.remove("borde_rojo")
+            document.getElementById("fideos").classList.remove("borde_rojo")
+            document.getElementById("encebollao").classList.add("borde_rojo")
+            document.getElementById("morena").classList.remove("borde_rojo")
+            document.getElementById("recortes").classList.remove("borde_rojo")
+        }
+        
+        document.getElementById("mor").onclick = alerta4;
+        function alerta4(){
+            document.getElementById("mojama").classList.remove("borde_rojo")
+            document.getElementById("fideos").classList.remove("borde_rojo")
+            document.getElementById("encebollao").classList.remove("borde_rojo")
+            document.getElementById("morena").classList.add("borde_rojo")
+            document.getElementById("recortes").classList.remove("borde_rojo")
+        }
+        
+        document.getElementById("rec").onclick = alerta5;
+        function alerta5(){
+            document.getElementById("mojama").classList.remove("borde_rojo")
+            document.getElementById("fideos").classList.remove("borde_rojo")
+            document.getElementById("encebollao").classList.remove("borde_rojo")
+            document.getElementById("morena").classList.remove("borde_rojo")
+            document.getElementById("recortes").classList.add("borde_rojo")
+        }
+        
     </script>
 </body>
 </html>

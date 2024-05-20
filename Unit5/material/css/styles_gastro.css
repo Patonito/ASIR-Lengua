@@ -153,45 +153,171 @@ footer {
         max-width: 30px;
     }
 }
+/* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
 
-div #gastronomia{
-    background-image: url(../resources/fondos/fondo3.jpg);
+header,aside,main,footer,div,article{
+    border: black solid 1px;
+}
+
+.grid-container {
     display: grid;
-    overflow: auto;
     grid-template:
-    "intro intro intro"
-    "mojama fideos encebollado"
-    "recortes moreno atun"
-    ;
+    "lateral cabecera lateral2"
+    "lateral principal lateral2"
+    "lateral pie lateral2";
+
+    height: 100vh;
+    grid-template-rows: 2fr 30fr 1fr;
+    grid-template-columns: 3fr 25fr 3fr;
+}
+
+header {
+    grid-area: cabecera;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../resources/imagenes/Faro_de_Trafalgar_al_atardecer.jpg);
+    background-size:300px 200px;
+}
+
+header div {
+    background-image: url(../resources/fondos/fondo2.jpg);
+    width: 65%;
+    align-items: center;
+}
+
+#escudo {
+    height: 100px;
+    float: left;
+}
+
+aside {
+    grid-area: lateral;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    background-color:burlywood;
+}
+
+.icono {
+    height: 120px;
+}
+
+.icono:hover {
+    background-color: yellowgreen;
+}
+
+#actual {
+    background-color: rgb(208, 167, 113);
+}
+
+main {
+    grid-area: principal;
+    background-image: url(../resources/fondos/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+}
+
+main ul li {
+    list-style: none;
+
+}
+
+main ul li:hover {
+    background-color: lightcyan;
+}
+
+.derecha {
+    grid-area: lateral2;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: pie;
+    background-color:khaki;
+    padding: 0px 5px 0px;
+}
+
+article{
+    text-align: justify;
+}
+
+h2 {
+    color: brown;
+}
+
+article p, article li {
+    margin: 10px;
+    color:darkblue;
+}
+
+.img_texto {
+    height: 200px;
+    float: right;
+    overflow: auto;
+    margin: 5px 5px;
+}
+
+.img_texto_centro {
+    height:500px;
+    text-align: center;
+    border: 0px;
+}
+
+div #gastronomia {
+    display: grid;
+    grid-template:
+    "mojama mojama fideos fideos encebollao encebollao"
+    "morena morena morena recortes recortes recortes";
+
     height: 100vh;
 }
-div d1{
-    grid-area: intro;
+
+#mojama {
+    grid-area: mojama;
 }
-div d2{
-    grid-area: mojama ;
+#fideos {
+    grid-area: fideos;
 }
-div d3 {
-    grid-area: fideos ;
+#encebollao {
+    grid-area: encebollao;
 }
-div d4{
-    grid-area: encebollado ;
+#morena {
+    grid-area: morena;
 }
-div d5{
-    grid-area: recortes ;
-}
-div d6{
-    grid-area: moreno ;
-}
-div d7{
-    grid-area: atun;
-}
-.img {
-    width: 350px;
+#recortes {
+    grid-area: recortes;
 }
 
-/*
-.clear{
-    clear: both;
+.imagenn {
+   height: 300px;
 }
-*/
+
+div .borde_rojo {
+    border: red solid 2px;
+}
+
+main div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
