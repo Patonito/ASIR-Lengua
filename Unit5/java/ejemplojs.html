@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con Java Script</title>
+    <script type="text/javascript">
+        window.onload =  inicializa;
+        function inicializa(){
+            document.getElementById("titulo").onclick = saluda;
+            document.getElementById("boton").onclick = saluda;
+        }
+        function saluda(){
+            let nombre = document.getElementById("nombre").value;
+          //alert('buenos dias, buneas tardes, buenas noches ' + nombre);
+          //añadir nombre al p
+            let actual = document.getElementById("lista").innerHTML;
+            actual = actual +"<br>" + nombre;
+            document.getElementById("lista").innerHTML = actual;   
+            document.getElementById("nombre").value = "";    
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo">Saludo</h1>
+    <form>
+        <input type="text" id="nombre" name="nombre">
+        <input type="button" id="boton" name="boton" value="añadir">
+    </form>
+    <p id="lista"></p>
+</body>
+</html>

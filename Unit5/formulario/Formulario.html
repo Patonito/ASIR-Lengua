@@ -1,99 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" type="text/css" href="./frormulario.css">
+    <title>Formulario Responsive</title>
+    <link rel="stylesheet" type="text/css" href="./formulario.css">
 </head>
 <body>
     <div class="container">
-        <h1>Formulario de Registro</h1>
-        <fieldset>Formulario </fieldset>
-        <fieldset>Datos Personales: </fieldset>
-        <form actuion="#" method="post">
-            <fieldset id="datos_perosnales"> 
-                <!--NAME-->
-                <label for="pnombre">Nombre: <br>
-                    <input type="text" id="pnombre" name="nombre" placeholder="Escribe tu nombre..."> <br>
-                </label>
-                <!--APEP-->
-                <label for="papellido">Apellido: <br>
-                    <input type="text" id="papellido" name="apellido" placeholder="Escribe tu apellido..."> <br>
-                </label>
-                <!--DNI-->
-                <label for="dni">DNI: <br>
-                    <input type="text" id="dni" name="dni" placeholder="Escribe tu dni..."><br>
-                </label>
-                <!--terf-->
-                <label from="telf">Telefono: <br>
-                    <input type="tel" id="telf" name="telfono" placeholder="Escribe tu telfono..." size="12"> <br>
-                </label>
-                <!--mail-->
-                <label for="email">Correo Electronico: <br>
-                    <input type="email" id="email" name="email" placeholder="Escribe tu correo..." size="25"> <br>
-                </label>
-                <!--Direc-->
-                <label for="direc">Direccion: <br>
-                    <input type="text" id="direc" name="direccion" placeholder="Escrube tu direccion..." size="30"> <br>
-                </label>
-                <!--fecha nacim-->
-                <label for="fn">Fecha de Nacimiento: <br>
-                    <input type="date" id="fn" name="fechanacim"> <br>
-                </label>       
-                 <!--paises-->   
-                <div>
-                    <label for="paiscampo">Pais:</label> <br>
-                    <select id="paiscampo" name="pais" required>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="España">España</option>
-                        <option value="China">China</option>
-                    </select>
-                </div>
-                <!--sexo-->
-                <div>
-                    Sexo:<br>
-                        <input type="radio" id="sx1" name="sexo"> 
-                        <label for="sexo">Femenino</label> <br>
-                        <input type="radio" id="sx2" name="sexo"> 
-                        <label for="sexo">Masculino</label> <br>
-                        <input type="radio" id="sx3" name="sexo"> 
-                        <label for="sexo">No contestar</label>
-                </div>
-            </fieldset>
-            <fieldset>Detalles de Peticion: </fieldset>
-            <fieldset>
-                     <!--SMS-->
-                <label for="sms">Mensaje:</label>
-                <textarea name="comentario"></textarea> <br>
-                <!--enviar--> 
-                <input type="submit" value="Seleccionar archivo">
-                <label  for="enviar">Ningun archivo seleccionado</label>
-                    <!--hobbies-->
-                <div>
-                    Hobbies:<br>
-                        <input type="checkbox" id="ex" name="existir">
-                        <label for="ex">Existir</label>   <br>
-                        <input type="checkbox" id="com" name="comer">
-                        <label for="comer">Comer</label>  <br>
-                        <input type="checkbox" id="dormir" name="eke">  
-                        <label for="dormit">Dormir</label> <br>
-                        <input type="checkbox" id="vj" name="Video_juego"> 
-                        <label for="vj">Video juegos </label> <br>
-                </div>
-                <!--horario preferido-->
+        <h1>Formulario Responsive</h1>
+        <form action="#" method="post">
+            <fieldset class="cadetblue">
+                <legend>Formulario</legend>
+
+                <fieldset class="cadetblue" id="datos_personales">
+                    <legend>Datos personales:</legend>
                     <div>
-                        <label for="hp">Horario preferido:</label> <br>
-                        <select id="hp" name="hp" required>
-                            <option value="12">12:00</option>
-                            <option value="4">16:00</option>
-                            <option value="5">18:00</option>
-                            <option value="8">20:00</option>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo Electrónico:</label>
+                        <input placeholder="tucorreo@ejemplo.com" type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="(+34)?[6-9][0-9]{8}">
+                    </div>
+                    <div>
+                        <label for="fecha">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div>
+                        <label for="paisCampo">País:</label>
+                        <select id="paisCampo" name="pais" required>
+                            <option value="mexico">México</option>
+                            <option value="espania">España</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="chile">Chile</option>
                         </select>
-                    </div>  
+                    </div>
+                </fieldset>
+                <fieldset class="cadetblue" id="detalles_peticion">
+                    <!--
+                        <legend>Detalle de la petición:</legend>
+                        -->
+                    <div id="mensaje">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea rows="16" cols="25" id="mensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <label for="archivo">Subir Archivo:</label>
+                        <input type="file" id="archivo" name="archivo">
+                    </div>
+                    <div>
+                        <label for="maniana">Preferencia de estudio:</label>
+                        <div class="recuadro_multi">
+                            <label for="maniana"><input type="radio" id="maniana" value="maniana"
+                                    name="estudio">Mañana</input></label>
+                            <label for="tarde"><input type="radio" id="tarde" value="tarde"
+                                    name="estudio">Tarde</input></label>
+                            <label for="noche"><input type="radio" id="noche" value="noche"
+                                    name="estudio">Noche</input></label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="deportes">Hobbies:</label>
+                        <div class="recuadro_multi">
+                            <label for="deportes"><input type="checkbox" id="deportes" value="deportes"
+                                    name="deportes">Deportes</input></label>
+                            <label for="tecnologia"><input type="checkbox" id="tecnologia" value="tecnologia"
+                                    name="tecnologia">Tecnología</input></label>
+                            <label for="politica"><input type="checkbox" id="politica" value="politica"
+                                    name="politica">Política</input></label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
             </fieldset>
         </form>
-    </diV>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+fieldset {
+    border-radius: 5px;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+fieldset.cadetblue {
+    border-radius: 10px;
+    border-color: cadetblue;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+fieldset#datos_personales {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+legend.cadetblue {
+    font-size: 1.5em;
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+}
+fieldset.cadetblue div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+fieldset#detalles_peticion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+div#mensaje {
+    grid-row: span 3;
+}
+
+div.recuadro_multi {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+div.recuadro_multi input {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+div.recuadro_multi label {
+    font-weight: normal;
+}
