@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" type="text/css" href="../css/hospital_styles.css">
+</head>
+
+<body>
+    <div class="grid_container">
+        <header>
+            <a href="./hospital_inicio.html"><img src="/img/logo_hospital.jpg" alt="logo_hospital"></a>
+            <h1>HU Puerto Real</h1>
+            <img src="/img/logo_hospital.jpg" alt="logo_hospital">
+        </header>
+        <main>
+            <section>
+                <h2>Informacion Paciente</h2>
+                <fieldset>
+                    <legend>Cita</legend>
+                    <fieldset>
+                        <legend>Datos personales:</legend>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                    
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+
+                            <label for="fecha">DNI:</label>
+                            <input type="text" id="dni" name="dni" required><br> 
+
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" pattern="(+34)?[6-9][0-9]{8}">
+                        
+                            <label for="email">Email:</label>
+                            <input placeholder="tucorreo@ejemplo.com" type="email" id="email" name="email" required>
+                        
+                    </fieldset> 
+                    <fieldset>
+                        <legend>Cita</legend>
+                            <label for="fname">Especialesta:</label>
+                                <input type="select" id="Especialesta" name="Especialesta"> 
+                                    <option value="trau">Traumatologia</option>
+                                    <option value="of">Oftalmolpgia</option>
+                                    ?????????????????????????????
+
+                            <label for="rfd">Desde:</label> 
+                                <input type="date" id="rfd" name="rfd"> 
+                            <label for="rfd">Hasta:</label>
+                                <input type="date" id="rfd" name="rfd">
+
+                            <label for="urgencia">Urgencia:</label>
+                                <input type="range" value="10" min="1" max="10" id="rfd" name="rfd">                        
+
+                    </fieldset>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+
+                </fieldset>
+            </section>
+        </main>
+        <aside>
+            <a href="./habitaciones.html"><img src="/img/hab.jpg" alt="habitacion" /></a>
+            <a href="./medicos.html"><img src="/img/med.jpg" alt="medico" /></a>
+        </aside>
+        <footer>
+            <h3>HOSPITAL UNIVERSITARIO DE PUERTO REAL</h3>
+            <h3>&reg; Web Relaizada por Danca</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
